@@ -1,0 +1,14 @@
+[13-Aug-2018 04:10:51 UTC] PHP Fatal error:  Can't use method return value in write context in /home/kuzhithurai/public_html/admin-api/application/helpers/my_helper.php on line 128
+[13-Aug-2018 04:10:55 UTC] PHP Fatal error:  Can't use method return value in write context in /home/kuzhithurai/public_html/admin-api/application/helpers/my_helper.php on line 128
+[13-Aug-2018 04:11:40 UTC] PHP Fatal error:  Can't use method return value in write context in /home/kuzhithurai/public_html/admin-api/application/helpers/my_helper.php on line 128
+[13-Aug-2018 07:11:35 UTC] PHP Fatal error:  Can't use method return value in write context in /home/kuzhithurai/public_html/admin-api/application/helpers/my_helper.php on line 128
+[13-Aug-2018 07:11:40 UTC] PHP Fatal error:  Can't use method return value in write context in /home/kuzhithurai/public_html/admin-api/application/helpers/my_helper.php on line 128
+[13-Aug-2018 07:39:03 UTC] PHP Fatal error:  Can't use method return value in write context in /home/kuzhithurai/public_html/admin-api/application/helpers/my_helper.php on line 128
+[13-Aug-2018 07:39:34 UTC] PHP Fatal error:  Can't use method return value in write context in /home/kuzhithurai/public_html/admin-api/application/helpers/my_helper.php on line 129
+[13-Aug-2018 07:39:36 UTC] PHP Fatal error:  Can't use method return value in write context in /home/kuzhithurai/public_html/admin-api/application/helpers/my_helper.php on line 129
+[13-Aug-2018 07:40:40 UTC] PHP Fatal error:  Can't use method return value in write context in /home/kuzhithurai/public_html/admin-api/application/helpers/my_helper.php on line 130
+[13-Aug-2018 07:42:12 UTC] PHP Fatal error:  Can't use method return value in write context in /home/kuzhithurai/public_html/admin-api/application/helpers/my_helper.php on line 129
+[13-Aug-2018 07:44:28 UTC] PHP Fatal error:  Can't use method return value in write context in /home/kuzhithurai/public_html/admin-api/application/helpers/my_helper.php on line 129
+[13-Aug-2018 09:35:58 UTC] PHP Fatal error:  Cannot redeclare User_model::get_users() in /home/kuzhithurai/public_html/admin-api/application/modules/user/models/User_model.php on line 103
+[13-Aug-2018 09:36:36 UTC] PHP Fatal error:  Cannot redeclare User_model::get_users() in /home/kuzhithurai/public_html/admin-api/application/modules/user/models/User_model.php on line 103
+[13-Aug-2018 09:36:39 UTC] PHP Fatal error:  Cannot redeclare User_model::get_users() in /home/kuzhithurai/public_html/admin-api/application/modules/user/models/User_model.php on line 103

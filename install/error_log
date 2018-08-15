@@ -1,0 +1,7 @@
+[13-Aug-2018 04:29:02 UTC] PHP Fatal error:  Call to undefined function password_hash() in /home/kuzhithurai/public_html/admin-api/install/index.php on line 76
+[13-Aug-2018 04:31:23 UTC] PHP Fatal error:  Call to undefined function password_hash() in /home/kuzhithurai/public_html/admin-api/install/index.php on line 76
+[13-Aug-2018 04:33:08 UTC] PHP Fatal error:  Call to undefined function password_hash() in /home/kuzhithurai/public_html/admin-api/install/index.php on line 163
+[13-Aug-2018 07:10:24 UTC] PHP Fatal error:  Call to undefined function password_hash() in /home/kuzhithurai/public_html/admin-api/install/index.php on line 162
+[13-Aug-2018 07:11:14 UTC] PHP Notice:  Undefined variable: db_file in /home/kuzhithurai/public_html/admin-api/install/index.php on line 180
+[13-Aug-2018 07:11:14 UTC] PHP Notice:  Undefined variable: db_file_path in /home/kuzhithurai/public_html/admin-api/install/index.php on line 185
+[13-Aug-2018 07:11:14 UTC] PHP Warning:  file_put_contents(): Filename cannot be empty in /home/kuzhithurai/public_html/admin-api/install/index.php on line 185
