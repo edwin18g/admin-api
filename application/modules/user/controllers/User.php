@@ -20,9 +20,12 @@ $this->dashboard();
     	} 
     }
 
-public function priest()
+public function priests()
 {
-    
+    $this->load->model('Priest_model');
+    $data['priestList']             = $this->Priest_model->getPriests();   
+    echo "<pre>";
+    print_r($data['priestList']); die;
 }
 public function dashboard($id='') {  
     
