@@ -1,7 +1,7 @@
 <body class="hold-transition login-page">
 	<div class="login-box">
 	  	<div class="login-logo">
-	    	<a href="<?php echo base_url(); ?>"><b>User Login and Management</b></a>
+	    	<a href="<?php echo base_url(); ?>"><b>Kuzhithurai Diocese</b></a>
 	  	</div>
 	  	<!-- /.login-logo -->
 	  	<div class="login-box-body">
