@@ -18,10 +18,12 @@ class Priest_model extends CI_Model {
 			}
 		else
 		{
-			if(!empty($param['limit']))$this->db->limit($param['offset'],$param['limit']);
+			if(!empty($param['limit'])){$this->db->limit($param['offset'],$param['limit']);}
 			
 			$result =   $this->db->get('priest')->result_array();
 		}
+		echo $this->db->last_query();
+		die;
     	return $result;
     	
     }
