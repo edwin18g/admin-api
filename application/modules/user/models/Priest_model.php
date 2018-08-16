@@ -18,7 +18,7 @@ print_r($param);
 			}
 		else
 		{
-			if(!empty($param['limit'])){$this->db->limit($param['offset'],$param['limit']);}
+			if(!empty($param['limit'])){$this->db->limit(1,10);}
 			
 			$result =   $this->db->get('priest')->result_array();
 		}
