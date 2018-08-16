@@ -578,3 +578,10 @@ th.showRolesPermission {
     padding: 7px 0px 0px 7px;
     background-color: #edeef2;
 }
+.dash-media {
+    background: #ffffff;
+    border: 6px #ffff;
+    border-style: solid;
+    border-radius: 50px;
+    box-shadow: 1px 1px 4px;
+}

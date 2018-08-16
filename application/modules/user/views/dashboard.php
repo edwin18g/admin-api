@@ -27,22 +27,17 @@
         <ul class="list-inline">
     <li class="text-center">
       <div class="col-sm-3">
-      <div class="media">
+      <div class="media dash-media">
   <div class="media-left">
     <img src="http://4.bp.blogspot.com/-CiBrlthg3V4/TuNxJRmZ1_I/AAAAAAAAJXE/DY-Ez3RxqUE/s400/Bishop%2BPaprocki.jpg" class="media-object" style="width:60px">
   </div>
   <div class="media-body">
-    <h4 class="media-heading">Priests</h4>
-    <p>140</p>
+    <h2 class="media-heading">120</h2>
+    <h4>Priests</h4>
   </div>
 </div>
       
       </div> </li>
-        <li class="text-center"> <img src="https://cdn2.iconfinder.com/data/icons/iconslandgps/PNG/128x128/Places/CatholicTemple.png" class="media-object" ><h5>Parish</span></h5></li>
-            <li class="text-center"> <img src="https://cdn3.iconfinder.com/data/icons/iconka-buddy-set/128/priest_128.png" class="media-object" ><h5>Priest</span></h5></li>
-                <li class="text-center"> <img src="https://cdn3.iconfinder.com/data/icons/iconka-buddy-set/128/priest_128.png" class="media-object" ><h5>Priest</span></h5></li>
-                    <li class="text-center"> <img src="https://cdn3.iconfinder.com/data/icons/iconka-buddy-set/128/priest_128.png" class="media-object" ><h5>Priest</span></h5></li>
-                        <li class="text-center"> <img src="https://cdn3.iconfinder.com/data/icons/iconka-buddy-set/128/priest_128.png" class="media-object" ><h5>Priest</span></h5></li>
   </ul>
      
 
