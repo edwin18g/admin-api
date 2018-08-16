@@ -32,8 +32,7 @@ public function priests()
     $param['count']                 = true;
     $data['priestList_count']       = $this->Priest_model->getPriests( $param);
     $data['offset']                 = count($data['priestList']);
-    echo "<pre>";
-    print_r($data); exit;
+    echo "<pre>"; die;
     $this->load->view('include/header'); 
         $this->load->view('priestView', $data);
 //        $this->load->view('priests', $data);
