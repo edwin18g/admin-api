@@ -10,7 +10,7 @@ class Priest_model extends CI_Model {
       */
       
     function getPriests($param= array()){
-print_r($param);
+
 		$this->db->select($param['select']);
 		if(isset($param['count']))
 			{
@@ -22,8 +22,8 @@ print_r($param);
 			
 			$result =   $this->db->get('priest')->result_array();
 		}
-		echo $this->db->last_query();
-		die;
+		//echo $this->db->last_query();
+		//die;
     	return $result;
     	
     }
