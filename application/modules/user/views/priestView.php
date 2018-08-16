@@ -78,3 +78,10 @@
   </div>
   </div>
     
+  <script>
+      var priestList      = JSON.parse('<?php echo json_encode($priestList); ?>');
+console.log(priestList);
+
+
+
+      </script>

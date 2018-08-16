@@ -658,11 +658,11 @@ th.showRolesPermission {
 
 .list li:nth-child(1) {
     
-    background-color: #201c2b;
+    background-color: #b8b5c0;
     text-transform: uppercase;
     font-size: 8pt;
     font-weight: bold;
-    color: #b8b5c0;
+    color: #201c2b;
 
     
 }
