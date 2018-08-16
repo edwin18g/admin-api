@@ -26,6 +26,7 @@
       </div>
         <ul class="list-inline">
     <li class="text-center">
+        <a href="<?php echo base_url('user/profile');?>" >
       <div class="col-sm-3">
       <div class="media dash-media">
   <div class="media-left">
@@ -37,7 +38,7 @@
   </div>
 </div>
       
-      </div> </li>
+      </div> </a></li>
   </ul>
      
 
