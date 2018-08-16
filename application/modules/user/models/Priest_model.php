@@ -10,8 +10,19 @@ class Priest_model extends CI_Model {
       */
       
     function getPriests($param= array()){
-    	
-    	return $this->db->get('priest')->result_array();
+
+		$this->db->select($param['select']);
+		if(isset($param['count']))
+			{
+			$result =	$this->db->get('priest')->num_rows();
+			}
+		else
+		{
+			if(!empty($param['limit']))$this->db->limit($param['offset'],$param['limit']);
+			
+			$result =   $this->db->get('priest')->result_array();
+		}
+    	return $result;
     	
     }
   	function auth_user() {

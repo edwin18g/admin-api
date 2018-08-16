@@ -22,11 +22,23 @@ $this->dashboard();
 
 public function priests()
 {
+    is_login();
     $this->load->model('Priest_model');
-    $data['priestList']             = $this->Priest_model->getPriests();   
-    echo "<pre>";
-    print_r($data['priestList']); die;
+    $user_id                        = $this->session->userdata ('user_details')[0]->users_id;   
+    $param['limit']                 = 15 ;
+    $param['offset']                = 0 ;
+    $param['select']                = '*' ;
+    $data['priestList']             = $this->Priest_model->getPriests( $param);
+    $param['count']                 = true;
+    $data['priestList_count']       = $this->Priest_model->getPriests( $param);
+    $data['offset']                 = count($data['priestList']);
+    $this->load->view('include/header'); 
+    $this->load->view('priests', $data);
+    $this->load->view('include/footer');
+
 }
+
+
 public function dashboard($id='') {  
     
     
