@@ -585,3 +585,7 @@ th.showRolesPermission {
     border-radius: 50px;
     box-shadow: 1px 1px 4px;
 }
+
+.dash-block a{
+    color:#7d0e91;
+}

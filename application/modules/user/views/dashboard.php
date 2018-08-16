@@ -25,7 +25,7 @@
 
       </div>
         <ul class="list-inline">
-    <li class="text-center">
+    <li class="text-center dash-block">
         <a href="<?php echo base_url('user/profile');?>" >
       <div class="col-sm-3">
       <div class="media dash-media">
