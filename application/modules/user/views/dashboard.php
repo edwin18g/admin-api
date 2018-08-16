@@ -26,7 +26,7 @@
       </div>
         <ul class="list-inline">
     <li class="text-center dash-block">
-        <a href="<?php echo base_url('user/profile');?>" >
+        <a href="<?php echo base_url('priests');?>" >
       <div class="col-sm-3">
       <div class="media dash-media">
   <div class="media-left">
