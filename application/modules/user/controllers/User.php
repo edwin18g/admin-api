@@ -27,7 +27,7 @@ public function priests()
     $user_id                        = $this->session->userdata ('user_details')[0]->users_id;   
     $param['limit']                 = 15 ;
     $param['offset']                = 0 ;
-    $param['select']                = '*' ;
+    $param['select']                = 'priest.id' ;
     $data['priestList']             = $this->Priest_model->getPriests( $param);
     $param['count']                 = true;
     $data['priestList_count']       = $this->Priest_model->getPriests( $param);
