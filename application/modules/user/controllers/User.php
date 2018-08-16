@@ -34,7 +34,8 @@ public function priests()
     $data['offset']                 = count($data['priestList']);
     
     $this->load->view('include/header'); 
-    $this->load->view('priests', $data);
+        $this->load->view('dashboard', $data);
+//        $this->load->view('priests', $data);
     $this->load->view('include/footer');
 
 }
