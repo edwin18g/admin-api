@@ -79,7 +79,7 @@
   </div>
     
   <script>
-      var priestList      = JSON.parse(escapeHTML('<?php echo json_encode($priestList,true); ?>'));
+      var priestList      = JSON.parse('<?php echo json_encode($priestList,true); ?>');
 console.log(priestList);
 
 function escapeHTML(text)
