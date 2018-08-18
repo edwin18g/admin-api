@@ -79,7 +79,7 @@
   </div>
     
   <script>
-      var priestList      = JSON.parse('<?php echo json_encode($priestList,JSON_HEX_APOS); ?>');
+      var priestList      = <?php echo json_encode($priestList); ?>;
 console.log(priestList);
 
 
