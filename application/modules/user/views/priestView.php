@@ -79,17 +79,9 @@
   </div>
     
   <script>
-      var priestList      = JSON.parse(escapeHTML('<?php echo json_encode($priestList,true); ?>'));
+      
+      = JSON.parse('<?php echo json_encode($priestList,true); ?>');
 console.log(priestList);
 
-function escapeHTML(text)
-    {
-       var chr = { "'": "'","(" :"(",")":")"};
-       function abc(a)
-       {
-          return chr[a];
-       }
-       return text.replace(/[\"&<>]/g, abc);
-    }
 
       </script>
