@@ -108,7 +108,7 @@
         </li>` ;
         $.each( priestList, function( i, priest  ) {
           rhtml  += ` <li>
-            <span><img src="http://www.kuzhithuraidiocese.com/images/diocesepriest/`+priest.priestid+`" class="img-responsive" alt="Cinque Terre"></span>
+            <span><img src="http://www.kuzhithuraidiocese.com/images/diocesepriest/`+priest.priestid+`.jpg" class="img-responsive" alt="Cinque Terre"></span>
             <span>`+priest.pname+`</span>
             <span>4341</span>
             <span><span class="label label-warning">Manager</span></span>
