@@ -81,6 +81,7 @@
   <script>
       var priestList      = <?php echo json_encode($priestList); ?>;
       var listSelect      = $('.list');
+      console.log(priestList);
       $( document ).ready(function() 
       {
         init();
