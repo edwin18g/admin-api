@@ -82,6 +82,7 @@
 
   
       var priestList      = <?php echo json_encode($priestList); ?>;
+      var offset          = <?php echo $offset;?>;
       var listSelect      = $('.list');
       console.log(priestList);
       $( document ).ready(function() 
@@ -92,12 +93,12 @@
       function init()
       {
         listSelect.empty();
-        listSelect.html(priestrender());
+        listSelect.html(priestrender(priestList));
         
       }
 
 
-      function priestrender()
+      function priestrender(priestList)
       {
           var rhtml = '';
           rhtml    += ` <li>
