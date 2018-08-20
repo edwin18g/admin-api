@@ -105,7 +105,7 @@
             <span>Actions</span>
             <span></span>
         </li>` ;
-        $.each( arr, function( i, priestList ) {
+        $.each( priestList, function( i, priest  ) {
           rhtml  += ` <li>
             <span>23</span>
             <span>Harry Giles</span>
