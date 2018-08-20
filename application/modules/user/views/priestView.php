@@ -79,6 +79,8 @@
   </div>
     
   <script>
+
+  
       var priestList      = <?php echo json_encode($priestList); ?>;
       var listSelect      = $('.list');
       console.log(priestList);
@@ -113,10 +115,15 @@
             <span>4341</span>
             <span><span class="label label-warning">Manager</span></span>
             <span>
-                <div class="btn-group btn-group-xs" role="group" aria-label="...">
-                    <button type="button" class="btn btn-default">Edit</button>
-                    <button type="button" class="btn btn-default" disabled>Delete</button>
-                </div>
+            <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Edit</a></li>
+     
+    </ul>
+  </div>
             </span>
             <span></span>
         </li>`      

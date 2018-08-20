@@ -2,9 +2,8 @@
 <div class="content-wrapper clearfix">
   <ol class="breadcrumb">
     <li><a href="#">Home</a></li>
-    <li><a href="#">Private</a></li>
-    <li><a href="#">Pictures</a></li>
-    <li class="active">Vacation</li>        
+    <li><a href="#">Dashboard</a></li>
+    
   </ol>
 <!-- Main content -->
   <div class="col-md-12 form f-label">
@@ -33,7 +32,7 @@
     <img src="http://4.bp.blogspot.com/-CiBrlthg3V4/TuNxJRmZ1_I/AAAAAAAAJXE/DY-Ez3RxqUE/s400/Bishop%2BPaprocki.jpg" class="media-object" style="width:60px">
   </div>
   <div class="media-body">
-    <h2 class="media-heading">120</h2>
+    <h2 class="media-heading">141</h2>
     <h4>Priests</h4>
   </div>
 </div>
