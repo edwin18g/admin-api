@@ -80,7 +80,49 @@
     
   <script>
       var priestList      = <?php echo json_encode($priestList); ?>;
-console.log(priestList);
+      var listSelect      = $('.list');
+      $( document ).ready(function() 
+      {
+        init();
+        });
+
+      function init()
+      {
+        listSelect.empty();
+        listSelect.html(priestrender());
+        
+      }
+
+
+      function priestrender()
+      {
+          var rhtml = '';
+          rhtml    += ` <li>
+            <span>ID</span>
+            <span>Name</span>
+            <span>Logins</span>
+            <span>Role</span>
+            <span>Actions</span>
+            <span></span>
+        </li>` ;
+        $.each( arr, function( i, priestList ) {
+          rhtml  += ` <li>
+            <span>23</span>
+            <span>Harry Giles</span>
+            <span>4341</span>
+            <span><span class="label label-warning">Manager</span></span>
+            <span>
+                <div class="btn-group btn-group-xs" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">Edit</button>
+                    <button type="button" class="btn btn-default" disabled>Delete</button>
+                </div>
+            </span>
+            <span></span>
+        </li>`      
+});   
+return rhtml;
+
+      }
 
 
       </script>
