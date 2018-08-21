@@ -487,6 +487,8 @@ class Imagecrud {
 		$this->image_moo = new Imagemoo();
 
 		$state_info = $this->getState();
+print_r($state_info);
+		die;
 
 		if(!empty($state_info))
 		{
