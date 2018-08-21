@@ -33,7 +33,7 @@ $this->dashboard();
 		$image_crud->set_table('gallery')
 		->set_ordering_field('priority')
 		->set_image_path('assets/uploads');
-			die;
+		
 		$output = $image_crud->render();
 	
 		$this->_example_output($output);

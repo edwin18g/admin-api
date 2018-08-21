@@ -481,7 +481,9 @@ class Imagecrud {
 		$ci = &get_instance();
 		$this->_load_language();
 		$ci->load->helper('url');
-		$ci->load->library('Image_moo');
+		$ci->load->library('imagemoo');
+		echo "run";
+		die;
 		$this->image_moo = new Image_moo();
 
 		$state_info = $this->getState();
