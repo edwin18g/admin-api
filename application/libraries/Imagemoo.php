@@ -66,7 +66,7 @@
  *
  */
 
-class Image_moo
+class Imagemoo
 {
 	// image vars new
 	private $main_image="";
