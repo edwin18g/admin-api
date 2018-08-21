@@ -24,7 +24,7 @@ $this->dashboard();
     {
         $this->load->helper('url'); //Just for the examples, this is not required thought for the library
 		
-        $this->load->library('image_CRUD');
+        $this->load->library('image_crud');
         $image_crud = new image_CRUD();
 	
 		$image_crud->set_primary_key_field('id');
