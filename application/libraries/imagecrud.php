@@ -19,7 +19,7 @@
  * @version    	0.5
  * @author     	John Skoumbourdis <scoumbourdisj@gmail.com>
  */
-class imagecrud {
+class Imagecrud {
 
 	protected $table_name = null;
 	protected $priority_field = null;
