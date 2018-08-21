@@ -26,7 +26,7 @@ $this->dashboard();
 		
         $this->load->library('imagecrud');
         $image_crud = new Imagecrud();
-	
+	die;
 		$image_crud->set_primary_key_field('id');
 		$image_crud->set_url_field('url');
 		$image_crud->set_title_field('title');
