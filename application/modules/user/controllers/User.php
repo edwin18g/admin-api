@@ -26,14 +26,14 @@ $this->dashboard();
 		
         $this->load->library('imagecrud');
         $image_crud = new Imagecrud();
-	die;
+	
 		$image_crud->set_primary_key_field('id');
 		$image_crud->set_url_field('url');
 		$image_crud->set_title_field('title');
 		$image_crud->set_table('gallery')
 		->set_ordering_field('priority')
 		->set_image_path('assets/uploads');
-			
+			die;
 		$output = $image_crud->render();
 	
 		$this->_example_output($output);
