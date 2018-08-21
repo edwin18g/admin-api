@@ -483,7 +483,7 @@ class Imagecrud {
 		$ci->load->helper('url');
 		
 		$ci->load->library('imagemoo');
-		echo "run";
+		echo "runs da";
 		die;
 		$this->image_moo = new Image_moo();
 
