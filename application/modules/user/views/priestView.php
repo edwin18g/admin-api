@@ -93,7 +93,7 @@
         });
         function more_priest()
         {
-
+            ajax_load();
         }
         
       function init()
