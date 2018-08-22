@@ -525,7 +525,7 @@ class Imagecrud {
 						die();
 					}					
 					
-					$file_name = $this->_upload_file( $this->image_path);
+					echo $file_name = $this->_upload_file( $this->image_path);
 					
 					echo "run here";
 				die;
