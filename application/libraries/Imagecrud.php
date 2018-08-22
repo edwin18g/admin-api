@@ -517,6 +517,8 @@ class Imagecrud {
 				break;
 
 				case 'upload_file':
+echo "run here";
+				die;
 					if($this->unset_upload)
 					{
 						throw new Exception('This user is not allowed to do this operation', 1);
