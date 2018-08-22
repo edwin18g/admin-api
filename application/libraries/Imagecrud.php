@@ -270,6 +270,8 @@ class Imagecrud {
 				'upload_url'		=> base_url().$upload_dir.'/',
 				'accept_file_types' => $reg_exp
 		);
+echo print_r($options);
+		die;
 		$upload_handler = new ImageUploadHandler($options);
 		$uploader_response = $upload_handler->post();
 		
@@ -288,7 +290,7 @@ class Imagecrud {
 		
 		if (!empty($upload_response)) {
 			$ci = &get_instance();
-			$ci->load->library('image_moo');
+			$ci->load->library('imagemoo');
 			
 			$filename = $upload_response->name;
 			
@@ -298,7 +300,7 @@ class Imagecrud {
 			list($width, $height) = getimagesize($path);
 			if($width > 1024 || $height > 768)
 			{
-				$ci->image_moo->load($path)->resize(1024,768)->save($path,true);
+				$ci->imagemoo->load($path)->resize(1024,768)->save($path,true);
 			}
 			/* ------------------------------------- */		
 
@@ -517,8 +519,7 @@ class Imagecrud {
 				break;
 
 				case 'upload_file':
-echo "run here";
-				die;
+
 					if($this->unset_upload)
 					{
 						throw new Exception('This user is not allowed to do this operation', 1);
@@ -527,6 +528,8 @@ echo "run here";
 					
 					$file_name = $this->_upload_file( $this->image_path);
 					
+					echo "run here";
+				die;
 					if ($file_name !== false) {
 						$this->_create_thumbnail( $this->image_path.'/'.$file_name , $this->image_path.'/'.$this->thumbnail_prefix.$file_name );
 						$this->_insert_table($file_name, $state_info->relation_value);
