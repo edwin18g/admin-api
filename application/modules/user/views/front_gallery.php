@@ -53,7 +53,7 @@ foreach($css_files as $file): ?>
 				<div class="container">
 					<ul class="nav navbar-nav">
 									<li>
-										<a href="index.php">Home</a>
+										<a href="http://www.kuzhithuraidiocese.com/index.php">Home</a>
 									
 									</li>
 									<li>
