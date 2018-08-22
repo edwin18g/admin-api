@@ -111,7 +111,7 @@
   data: { enddata: offset},
   success:function(res){
       alert(res);
-    listSelect.append(priestrender(res.priestList));
+    listSelect.append(priestrender(res['priestList']));
   }
 });
       }
