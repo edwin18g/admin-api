@@ -527,8 +527,7 @@ class Imagecrud {
 					
 					echo $file_name = $this->_upload_file( $this->image_path);
 					
-					echo "run here";
-				die;
+					
 					if ($file_name !== false) {
 						$this->_create_thumbnail( $this->image_path.'/'.$file_name , $this->image_path.'/'.$this->thumbnail_prefix.$file_name );
 						$this->_insert_table($file_name, $state_info->relation_value);
