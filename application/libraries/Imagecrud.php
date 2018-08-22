@@ -506,8 +506,7 @@ class Imagecrud {
 						'unset_upload' => $this->unset_upload,
 						'has_priority_field' => $this->priority_field !== null ? true : false
 					));
-					print_r($photos);
-					die;
+
 					if($state_info->ajax === true)
 					{
 						@ob_end_clean();
