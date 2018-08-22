@@ -72,6 +72,8 @@
         </li>
     </ul>
 
+    <div class="text-center"> <button type="button" class="btn btn-default" onclick="more_priest()">More</button></div>
+
 </div>
 
     </div>
@@ -80,7 +82,7 @@
     
   <script>
 
-  
+        var base_url      = '<?php echo base_url();?>'; 
       var priestList      = <?php echo json_encode($priestList); ?>;
       var offset          = <?php echo $offset;?>;
       var listSelect      = $('.list');
@@ -89,7 +91,11 @@
       {
         init();
         });
+        function more_priest()
+        {
 
+        }
+        
       function init()
       {
         listSelect.empty();
@@ -97,18 +103,23 @@
         
       }
 
+      function ajax_load()
+      {
+        $.ajax({
+  method: "POST",
+  url: base_url+'user/priest_ajax',
+  data: { enddata: offset},
+  success:function(res){
+      alert(res);
+    listSelect.append(priestrender(res.priestList));
+  }
+});
+      }
 
       function priestrender(priestList)
       {
           var rhtml = '';
-          rhtml    += ` <li>
-            <span>ID</span>
-            <span>Name</span>
-            <span>Logins</span>
-            <span>Role</span>
-            <span>Actions</span>
-            <span></span>
-        </li>` ;
+          
         $.each( priestList, function( i, priest  ) {
           rhtml  += ` <li>
             <span><img src="http://www.kuzhithuraidiocese.com/images/diocesepriest/`+priest.priestid+`.jpg" class="img-responsive" alt="Cinque Terre"></span>

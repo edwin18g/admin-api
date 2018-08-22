@@ -59,14 +59,29 @@ public function view_gallery()
         $this->load->view('include/header'); 
         $this->load->view('example.php',$output);	
         $this->load->view('include/footer');
-	}
+    }
+    public function priest_ajax()
+    {
+        is_login();
+    $this->load->model('Priest_model');
+    $user_id                        = $this->session->userdata ('user_details')[0]->users_id;   
+    $param['limit']                 = 15 ;
+    $param['offset']                = $this->input->post('enddata');
+    $param['select']                = '*' ;
+    $data['priestList']             = $this->Priest_model->getPriests( $param);
+    $param['count']                 = true;
+    $data['priestList_count']       = $this->Priest_model->getPriests( $param);
+    $data['offset']                 = $param['offset'] + count($data['priestList']);
+    echo json_encode($data);
+    die;
+    }
 public function priests()
 {
     is_login();
     $this->load->model('Priest_model');
     $user_id                        = $this->session->userdata ('user_details')[0]->users_id;   
     $param['limit']                 = 15 ;
-    $param['offset']                = 0 ;
+    $param['offset']                =  $this->input->post('enddata');
     $param['select']                = '*' ;
     $data['priestList']             = $this->Priest_model->getPriests( $param);
     $param['count']                 = true;
