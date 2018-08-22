@@ -227,9 +227,9 @@ foreach($css_files as $file): ?>
     $('#bcarousel').carousel({
       interval: 2400
     });
-    $('#fine-uploader').remove();
-    $('.delete-box').remove();
-    $('.move-box').remove();
+    $('#fine-uploader').hide();
+    $('.delete-box').hide();
+    $('.move-box').hide();
     
     
     
