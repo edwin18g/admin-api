@@ -219,7 +219,7 @@ foreach($css_files as $file): ?>
 		</div>
 	</div>
 
-	<script src="http://www.kuzhithuraidiocese.com/js/jquery.min.js"></script>
+	
 	<script src="http://www.kuzhithuraidiocese.com/js/bootstrap.min.js"></script>
 	<script src="http://www.kuzhithuraidiocese.com/js/scripts.js"></script>
 	<script type="text/javascript">
