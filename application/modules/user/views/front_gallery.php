@@ -225,13 +225,18 @@ foreach($css_files as $file): ?>
 	
 	<script src="http://www.kuzhithuraidiocese.com/js/bootstrap.min.js"></script>
 	<script src="http://www.kuzhithuraidiocese.com/js/scripts.js"></script>
-	<script type="text/javascript">
+	<script >
+
+var b = document.querySelector("textarea"); 
+
+
+b.setAttribute("disabled", "");
   $(document).ready(function() {
     $('#bcarousel').carousel({
       interval: 2400
     });
    
-    $('textarea').attr('disabled',true);
+    
     
     
     
