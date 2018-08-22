@@ -14,7 +14,7 @@ foreach($css_files as $file): ?>
 <div class="content-wrapper clearfix">
   <ol class="breadcrumb">
     <li><a href="#">Home</a></li>
-    <li><a href="#">Dashboard</a></li>
+    <li><a href="#">Gallery</a></li>
     
   </ol>
 <!-- Main content -->

@@ -52,6 +52,20 @@
 </div>
       
       </div> </a></li>
+      <li class="text-center dash-block">
+        <a href="<?php echo base_url('user/gallery');;?>" >
+      <div class="col-sm-3">
+      <div class="media dash-media">
+  <div class="media-left">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxM8jmirZGc4woptPdJUmsYCNynrvMdWw2g1WoELebsP0KRXwI" class="media-object" style="width:60px">
+  </div>
+  <div class="media-body">
+    <h2 class="media-heading">120</h2>
+    <h4>Gallery</h4>
+  </div>
+</div>
+      
+      </div> </a></li>
   </ul>
      
 
