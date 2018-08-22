@@ -19,7 +19,22 @@ $this->dashboard();
     		//redirect( base_url().'user/dashboard', 'refresh');
     	} 
     }
-
+public function view_gallery()
+{
+    $this->load->helper('url'); //Just for the examples, this is not required thought for the library
+		
+        $this->load->library('imagecrud');
+        $image_crud = new Imagecrud();
+	
+		$image_crud->set_primary_key_field('id');
+		$image_crud->set_url_field('url');
+		$image_crud->set_title_field('title');
+		$image_crud->set_table('gallery')
+		->set_ordering_field('priority')
+		->set_image_path('assets/uploads');
+		
+		$output = $image_crud->render(); 
+}
     public function gallery()
     {
         $this->load->helper('url'); //Just for the examples, this is not required thought for the library
