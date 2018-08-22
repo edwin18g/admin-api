@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
+
 <?php 
 foreach($css_files as $file): ?>
 	<link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
@@ -9,28 +6,39 @@ foreach($css_files as $file): ?>
 <?php foreach($js_files as $file): ?>
 	<script src="<?php echo $file; ?>"></script>
 <?php endforeach; ?>
-<style type='text/css'>
-body
-{
-	font-family: Arial;
-	font-size: 14px;
-}
-a {
-    color: blue;
-    text-decoration: none;
-    font-size: 14px;
-}
-a:hover
-{
-	text-decoration: underline;
-}
-</style>
-</head>
-<body>
+
 	
-	<div style='height:20px;'></div>  
+	
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper clearfix">
+  <ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Dashboard</a></li>
+    
+  </ol>
+<!-- Main content -->
+  <div class="col-md-12 form f-label">
+  <?php if($this->session->flashdata("messagePr")){?>
+    <div class="alert alert-info">      
+      <?php echo $this->session->flashdata("messagePr")?>
+    </div>
+  <?php } ?>
+    <!-- Profile Image -->
+  
+    <div class="box box-success pad-profile">
+     	<div class="box-header with-border">
+      </div>
+       
+	  <div style='height:20px;'></div>  
     <div>
 		<?php echo $output; ?>
     </div>
-</body>
-</html>
+
+                        
+      <!-- /.box -->
+    </div>
+    <!-- /.content -->
+  </div>
+</div>
+<!-- /.content-wrapper -->

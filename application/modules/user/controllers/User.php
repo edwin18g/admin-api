@@ -40,7 +40,9 @@ $this->dashboard();
     }
     function _example_output($output = null)
 	{
-		$this->load->view('example.php',$output);	
+        $this->load->view('include/header'); 
+        $this->load->view('example.php',$output);	
+        $this->load->view('include/footer');
 	}
 public function priests()
 {
