@@ -230,6 +230,8 @@ foreach($css_files as $file): ?>
     $('#fine-uploader').hide();
     $('.delete-box').hide();
     $('.move-box').hide();
+    $('textarea').attr('disabled',true);
+    
     
     
     
