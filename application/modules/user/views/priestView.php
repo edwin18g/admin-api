@@ -118,7 +118,7 @@
             <span>
             <div class="dropdown">
     <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
-    <span class="caret"></span></button>
+    <span class="glyphicon glyphicon-collapse-down"></span></button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
       <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete</a></li>
       <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Edit</a></li>
