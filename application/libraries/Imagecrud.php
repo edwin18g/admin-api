@@ -487,8 +487,7 @@ class Imagecrud {
 		$this->image_moo = new Imagemoo();
 
 		$state_info = $this->getState();
-print_r($state_info);
-		die;
+
 
 		if(!empty($state_info))
 		{
@@ -507,7 +506,8 @@ print_r($state_info);
 						'unset_upload' => $this->unset_upload,
 						'has_priority_field' => $this->priority_field !== null ? true : false
 					));
-
+					print_r($photos);
+					die;
 					if($state_info->ajax === true)
 					{
 						@ob_end_clean();
