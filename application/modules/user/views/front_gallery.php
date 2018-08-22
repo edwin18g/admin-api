@@ -26,7 +26,10 @@ foreach($css_files as $file): ?>
 <?php endforeach; ?>
 </head>
 <body>
-
+<style>
+#fine-uploader ,.delete-box ,.move-box {display:none !important;}
+ 
+</style>
 	<div class="container-fluid">
 		<div class="container">
 			<div class="row">
@@ -227,9 +230,7 @@ foreach($css_files as $file): ?>
     $('#bcarousel').carousel({
       interval: 2400
     });
-    $('#fine-uploader').hide();
-    $('.delete-box').hide();
-    $('.move-box').hide();
+   
     $('textarea').attr('disabled',true);
     
     
