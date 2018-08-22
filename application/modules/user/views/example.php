@@ -30,7 +30,7 @@ foreach($css_files as $file): ?>
      	<div class="box-header with-border">
       </div>
        
-	  <div style='height:20px;'></div>  
+	  <div class="clearfix"></div>
     <div>
 		<?php echo $output; ?>
     </div>
