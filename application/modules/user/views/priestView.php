@@ -72,7 +72,7 @@
         </li>
     </ul>
 
-    <div class="text-center"> <button type="button" class="btn btn-default" onclick="more_priest()">More</button></div>
+    <div class="text-center more-priest-block"> <button type="button" class="btn btn-default" onclick="more_priest()">More</button></div>
 
 </div>
 
@@ -113,6 +113,10 @@
         var priestTemp =$.parseJSON(res);
         
         offset = priestTemp['offset'];
+        if(priestTemp['offset'] == priestTemp['priestList_count'])
+        {
+$('.more-priest-block').hide();
+        }
     listSelect.append(priestrender(priestTemp['priestList']));
   }
 });
