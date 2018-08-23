@@ -99,7 +99,8 @@
       function init()
       {
         listSelect.empty();
-        listSelect.html(priestrender(priestList));
+        listSelect.html('<li></li>')
+        listSelect.append(priestrender(priestList));
         
       }
 
