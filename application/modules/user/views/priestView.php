@@ -111,7 +111,8 @@
   data: { enddata: offset},
   success:function(res){
         var priestTemp =$.parseJSON(res);
-      alert(priestTemp['priestList']);
+        
+        offset = priestTemp['offset'];
     listSelect.append(priestrender(priestTemp['priestList']));
   }
 });
