@@ -110,8 +110,9 @@
   url: base_url+'user/priest_ajax',
   data: { enddata: offset},
   success:function(res){
-      alert(res['priestList']);
-    listSelect.append(priestrender(res['priestList']));
+        var priestTemp =$.parseJSON(res);
+      alert(priestTemp['priestList']);
+    listSelect.append(priestrender(priestTemp['priestList']));
   }
 });
       }
