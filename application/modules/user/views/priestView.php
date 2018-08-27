@@ -140,12 +140,15 @@
 $('.more-priest-block').hide();
         }
     listSelect.append(priestrender(priestTemp['priestList']));
-    $('img').on("error", function () {
-    this.src = ResolveUrl("http://i2.wp.com/www.4motiondarlington.org/wp-content/uploads/2013/06/No-image-found.jpg");
-});
+   
   }
 });
       }
+      function imgError(image) {
+    image.onerror = "";
+    image.src = "http://i2.wp.com/www.4motiondarlington.org/wp-content/uploads/2013/06/No-image-found.jpg";
+    return true;
+}
 
       function priestrender(priestList)
       {
@@ -153,7 +156,7 @@ $('.more-priest-block').hide();
           
         $.each( priestList, function( i, priest  ) {
           rhtml  += ` <li>
-            <span><img src="http://www.kuzhithuraidiocese.com/images/diocesepriest/`+priest.priestid+`.jpg" class="img-responsive" alt="Cinque Terre"></span>
+            <span><img src="http://www.kuzhithuraidiocese.com/images/diocesepriest/`+priest.priestid+`.jpg" class="img-responsive" onerror="imgError(this);" alt="Cinque Terre"></span>
             <span>`+priest.pname+`</span>
             <span>4341</span>
             <span><span class="label label-warning">Manager</span></span>
