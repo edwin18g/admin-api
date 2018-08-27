@@ -11,9 +11,9 @@
 <style>
 /* Style The Dropdown Button */
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #9c27b0;
     color: white;
-    padding: 16px;
+    padding: 5px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -72,23 +72,15 @@
     </span>
     <span>
     <div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
+  <button class="dropbtn">All priest</button>
   <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+  <a href="#">
+    All Priest</a>
+    <a href="#">Other Diocese Priests</a>
+    <a href="#">Diocese Priests </a>
   </div>
 </div>
-    <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">All priest
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">
-    All Priest</a></li>
-    <li><a href="#">Other Diocese Priests</a></li>
-    <li><a href="#">Diocese Priests </a></li>
-  </ul>
-</div></span><span></span> </div>
+   </span><span></span> </div>
 <!-- Main content -->
   <div class="col-md-12 form f-label">
   <?php if($this->session->flashdata("messagePr")){?>
