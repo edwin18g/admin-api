@@ -1,3 +1,13 @@
+<style>
+.list-priest img{
+    width: 70px;
+    border-radius: 50px;
+}
+.list li:nth-child(even),.list li:nth-child(odd){
+    font-size:22px !important:
+
+}
+</style>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper clearfix">
   <ol class="breadcrumb">
@@ -28,7 +38,7 @@
 </div></span><span></span> </div>
     <div class="listWrap">
     
-    <ul class="list">
+    <ul class="list list-priest">
     
         <li>
             <span>ID</span>
