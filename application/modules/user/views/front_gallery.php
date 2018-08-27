@@ -26,10 +26,6 @@ foreach($css_files as $file): ?>
 <?php endforeach; ?>
 </head>
 <body>
-<style>
-#fine-uploader ,.delete-box ,.move-box {display:none !important;}
- 
-</style>
 	<div class="container-fluid">
 		<div class="container">
 			<div class="row">

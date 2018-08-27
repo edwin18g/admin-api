@@ -488,7 +488,7 @@ class Imagecrud {
 		$this->image_moo = new Imagemoo();
 
 		$state_info = $this->getState();
-
+$this->is_home = $is_home;
 
 		if(!empty($state_info))
 		{
