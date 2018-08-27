@@ -159,7 +159,7 @@ $('.more-priest-block').hide();
             <span><img src="http://www.kuzhithuraidiocese.com/images/diocesepriest/`+priest.priestid+`.jpg" class="img-responsive" onerror="imgError(this);" alt="Cinque Terre"></span>
             <span>`+priest.pname+`</span>
             <span>4341</span>
-            <span><span class="label label-warning">Manager</span></span>
+            <span></span>
             <span>
             <div class="dropdown">
     <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
