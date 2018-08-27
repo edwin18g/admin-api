@@ -24,8 +24,6 @@
     </div>
   <?php } ?>
     <!-- Profile Image -->
-  
-    <div class="box box-success pad-profile">
     <div class="col-md-12"> <span> <input class="form-control" id="myInput" type="text" placeholder="Search.."></span><span><div class="dropdown">
   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">All priest
   <span class="caret"></span></button>
@@ -36,6 +34,8 @@
     <li><a href="#">Diocese Priest</a></li>
   </ul>
 </div></span><span></span> </div>
+    <div class="box box-success pad-profile">
+    
     <div class="listWrap">
     
     <ul class="list list-priest">
