@@ -136,7 +136,7 @@
         ajax_load();
         }
         else if(searchValue == ''){
-           // logic to load all the data
+            init();
         }
     },300);
 });
