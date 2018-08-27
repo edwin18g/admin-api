@@ -477,7 +477,7 @@ class Imagecrud {
 		}
 	}
 
-	function render()
+	function render($is_home = false)
 	{
 		$ci = &get_instance();
 		$this->_load_language();
@@ -503,8 +503,8 @@ class Imagecrud {
 						'ordering_url' => $state_info->ordering_url,
 						'primary_key' => $this->primary_key,
 						'title_field' => $this->title_field,
-						'unset_delete' => $this->unset_delete,
-						'unset_upload' => $this->unset_upload,
+						'unset_delete' => $is_home?true:$this->unset_delete,
+						'unset_upload' => $is_home?true:$this->unset_upload,
 						'has_priority_field' => $this->priority_field !== null ? true : false
 					));
 
