@@ -171,6 +171,7 @@
         });
         function more_priest()
         {
+            searchKey = $('#searchkeyPirest').val();
             ajax_load();
         }
         
