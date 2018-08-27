@@ -169,6 +169,21 @@
       {
         init();
         });
+
+        $('#searchkeyPirest').on('keyup',function () {
+    var searchValue = $(this).val();
+    setTimeout(function(){
+        if(searchValue == $('#searchText').val() && searchValue != null && searchValue != "") {
+            listSelect.empty();
+        listSelect.html('<li></li>')     
+        offset = 0;    
+        ajax_load();
+        }
+        else if(searchValue == ''){
+           // logic to load all the data
+        }
+    },300);
+});
         function more_priest()
         {
             searchKey = $('#searchkeyPirest').val();
