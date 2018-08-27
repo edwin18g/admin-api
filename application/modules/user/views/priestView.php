@@ -16,15 +16,7 @@
     <li><a href="#">Pictures</a></li>
     <li class="active">Vacation</li>        
   </ol>
-<!-- Main content -->
-  <div class="col-md-12 form f-label">
-  <?php if($this->session->flashdata("messagePr")){?>
-    <div class="alert alert-info">      
-      <?php echo $this->session->flashdata("messagePr")?>
-    </div>
-  <?php } ?>
-    <!-- Profile Image -->
-    <div class="col-md-12"> <span> <input class="form-control" id="myInput" type="text" placeholder="Search.."></span><span><div class="dropdown">
+  <div class="col-md-12"> <span> <input class="form-control" id="myInput" type="text" placeholder="Search.."></span><span><div class="dropdown">
   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">All priest
   <span class="caret"></span></button>
   <ul class="dropdown-menu">
@@ -34,6 +26,15 @@
     <li><a href="#">Diocese Priests </a></li>
   </ul>
 </div></span><span></span> </div>
+<!-- Main content -->
+  <div class="col-md-12 form f-label">
+  <?php if($this->session->flashdata("messagePr")){?>
+    <div class="alert alert-info">      
+      <?php echo $this->session->flashdata("messagePr")?>
+    </div>
+  <?php } ?>
+    <!-- Profile Image -->
+   
     <div class="box box-success pad-profile">
     
     <div class="listWrap">
