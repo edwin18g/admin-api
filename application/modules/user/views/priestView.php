@@ -68,7 +68,7 @@
   </ol>
   <div class="col-md-12"> 
     <span class="col-md-4"> 
-        <input class="form-control" id="myInput" type="text" placeholder="Search..">
+        <input class="form-control" id="searchkeyPirest" type="text" placeholder="Search..">
     </span>
     <span>
     <div class="dropdown">
@@ -161,6 +161,7 @@
         var base_url      = '<?php echo base_url();?>'; 
       var priestList      = <?php echo json_encode($priestList); ?>;
       var offset          = <?php echo $offset;?>;
+      var searchKey       = '';
       var listSelect      = $('.list');
      
       console.log(priestList);
@@ -178,6 +179,7 @@
         listSelect.empty();
         listSelect.html('<li></li>')
         listSelect.append(priestrender(priestList));
+        searchKey = $('#searchkeyPirest').val();
         
       }
 
@@ -186,7 +188,7 @@
         $.ajax({
   method: "POST",
   url: base_url+'user/priest_ajax',
-  data: { enddata: offset},
+  data: { enddata: offset,search:searchKey},
   success:function(res){
         var priestTemp =$.parseJSON(res);
         
