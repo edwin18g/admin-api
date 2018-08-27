@@ -106,9 +106,7 @@
       var priestList      = <?php echo json_encode($priestList); ?>;
       var offset          = <?php echo $offset;?>;
       var listSelect      = $('.list');
-      $('img').on("error", function () {
-    this.src = ResolveUrl("http://i2.wp.com/www.4motiondarlington.org/wp-content/uploads/2013/06/No-image-found.jpg");
-});
+     
       console.log(priestList);
       $( document ).ready(function() 
       {
@@ -142,6 +140,9 @@
 $('.more-priest-block').hide();
         }
     listSelect.append(priestrender(priestTemp['priestList']));
+    $('img').on("error", function () {
+    this.src = ResolveUrl("http://i2.wp.com/www.4motiondarlington.org/wp-content/uploads/2013/06/No-image-found.jpg");
+});
   }
 });
       }
