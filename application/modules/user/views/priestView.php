@@ -152,7 +152,7 @@
         listSelect.empty();
         listSelect.html('<li></li>')
         listSelect.append(priestrender(priestList));
-        $('#priestCount').html('showing :' + offset + ' / ' + priestList_count]);
+        $('#priestCount').html('showing :' + offset + ' / ' + priestList_count);
         searchKey = $('#searchkeyPirest').val();
         
       }
