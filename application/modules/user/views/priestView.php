@@ -30,8 +30,8 @@
   <ul class="dropdown-menu">
     <li><a href="#">
     All Priest</a></li>
-    <li><a href="#">Other Diocese Priest</a></li>
-    <li><a href="#">Diocese Priest</a></li>
+    <li><a href="#">Other Diocese Priests</a></li>
+    <li><a href="#">Diocese Priests </a></li>
   </ul>
 </div></span><span></span> </div>
     <div class="box box-success pad-profile">
