@@ -53,6 +53,7 @@ $route['default_controller'] = 'user';
 $route['dashboard'] = 'user/dashboard';
 
 $route['priests'] = 'user/priests';
+$route['f/(:any)'] = 'user/priest/$1';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

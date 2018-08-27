@@ -79,7 +79,14 @@ public function view_gallery()
     echo json_encode($data);
     die;
     }
-public function priests()
+
+    public function priest($slag)
+    {
+echo  $slag;
+die;
+    }
+
+    public function priests()
 {
     is_login();
     $this->load->model('Priest_model');
