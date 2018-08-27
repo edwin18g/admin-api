@@ -172,6 +172,7 @@
 
         $('#searchkeyPirest').on('keyup',function () {
     var searchValue = $(this).val();
+    console.log("rund");
     setTimeout(function(){
         if(searchValue == $('#searchText').val() && searchValue != null && searchValue != "") {
             listSelect.empty();
