@@ -113,15 +113,16 @@
 
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #9c27b0;
+    background-color: #;
     color: white;
 }
 
 .modal-body {padding: 2px 16px;}
 
 .modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
+    padding: 2px 5px;
+    background-color: #9c27b0;
     color: white;
 }
 </style>
