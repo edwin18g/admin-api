@@ -37,7 +37,7 @@ class Imagecrud {
 	
 	/* Unsetters */
 	protected $unset_delete = false;
-	protected $unset_upload = false;
+	protected $unset_upload = false; // check
 
 	protected $language = null;
 	protected $lang_strings = array();

@@ -33,7 +33,7 @@ public function view_gallery()
 		->set_ordering_field('priority')
 		->set_image_path('assets/uploads');
 		
-        $output = $image_crud->render(true); 
+        $output = $image_crud->render(true); //new line
         $this->load->view('front_gallery.php',$output);	
 }
     public function gallery()
