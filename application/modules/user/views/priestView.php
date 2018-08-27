@@ -174,7 +174,7 @@
     var searchValue = $(this).val();
     console.log("rund");
     setTimeout(function(){
-        if(searchValue == $('#searchText').val() && searchValue != null && searchValue != "") {
+        if(searchValue == $('#searchkeyPirest').val() && searchValue != null && searchValue != "") {
             listSelect.empty();
         listSelect.html('<li></li>')     
         offset = 0;    
