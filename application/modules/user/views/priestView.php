@@ -80,7 +80,7 @@
     <a href="#">Diocese Priests </a>
   </div>
 </div>
-   </span><span></span> </div>
+   </span><span id="priestCount">   </span> </div>
 <!-- Main content -->
   <div class="col-md-12 form f-label">
   <?php if($this->session->flashdata("messagePr")){?>
@@ -117,6 +117,7 @@
       var offset          = <?php echo $offset;?>;
       var searchKey       = '';
       var listSelect      = $('.list');
+      var priestList_count = <?php echo $priestList_count?>;
      
       console.log(priestList);
       $( document ).ready(function() 
@@ -151,6 +152,7 @@
         listSelect.empty();
         listSelect.html('<li></li>')
         listSelect.append(priestrender(priestList));
+        $('#priestCount').html('showing :' + offset + ' / ' + priestList_count]);
         searchKey = $('#searchkeyPirest').val();
         
       }
@@ -165,6 +167,7 @@
         var priestTemp =$.parseJSON(res);
         
         offset = priestTemp['offset'];
+        $('#priestCount').html('showing :' +priestTemp['offset']+' / ' +priestTemp['priestList_count']);
         if(priestTemp['offset'] == priestTemp['priestList_count'])
         {
 $('.more-priest-block').hide();
@@ -204,6 +207,7 @@ $('.more-priest-block').hide();
             <span></span>
         </li>`      
 });   
+
 return rhtml;
 
       }
