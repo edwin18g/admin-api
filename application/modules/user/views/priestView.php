@@ -97,55 +97,9 @@
     <ul class="list list-priest">
     
         <li>
-            <span>ID</span>
-            <span>Name</span>
-            <span>Logins</span>
-            <span>Role</span>
-            <span>Actions</span>
-            <span></span>
+            loadding.....
         </li>
-        <li>
-            <span>23</span>
-            <span>Harry Giles</span>
-            <span>4341</span>
-            <span><span class="label label-warning">Manager</span></span>
-            <span>
-                <div class="btn-group btn-group-xs" role="group" aria-label="...">
-                    <button type="button" class="btn btn-default">Edit</button>
-                    <button type="button" class="btn btn-default" disabled>Delete</button>
-                </div>
-            </span>
-            <span></span>
-        </li>
-        <li>
-            <span>543</span>
-            <span>Susan Crown</span>
-            <span>10032</span>
-            <span><span class="label label-default">Guest</span></span>
-            <span>
-                <div class="btn-group btn-group-xs" role="group" aria-label="...">
-                    <button type="button" class="btn btn-default">Edit</button>
-                    <button type="button" class="btn btn-default" disabled>Delete</button>
-                </div>
-            </span>
-            <span></span>
-        </li>
-        <li>
-            <span>43</span>
-            <span>Barry Smith</span>
-            <span>91</span>
-            <span><span class="label label-primary">Engineer</span></span>
-            <span>
-                <div class="btn-group btn-group-xs" role="group" aria-label="...">
-                    <button type="button" class="btn btn-default">Edit</button>
-                    <button type="button" class="btn btn-default" disabled>Delete</button>
-                </div>
-            </span>
-            <span></span>
-        </li>
-        <li>
-
-        </li>
+        
     </ul>
 
     <div class="text-center more-priest-block"> <button type="button" class="btn btn-default" onclick="more_priest()">More</button></div>
@@ -172,6 +126,7 @@
 
         $('#searchkeyPirest').on('keyup',function () {
     var searchValue = $(this).val();
+    searchKey = searchValue;
     console.log("rund");
     setTimeout(function(){
         if(searchValue == $('#searchkeyPirest').val() && searchValue != null && searchValue != "") {
