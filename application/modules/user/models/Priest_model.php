@@ -8,7 +8,14 @@ class Priest_model extends CI_Model {
 	/**
       * This function is used authenticate user at login
       */
-      
+	function  getpriest($param){
+
+		$this->db->where('slug',$param['slug']);
+		$query = $this->db->get('priest');
+$ret = $query->row();
+return $ret;
+	} 
+	  
     function getPriests($param= array()){
 
 		$this->db->select($param['select']);

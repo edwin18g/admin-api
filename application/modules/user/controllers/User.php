@@ -82,7 +82,11 @@ public function view_gallery()
 
     public function priest($slag)
     {
-echo  $slag;
+        $this->load->model('Priest_model');
+$param['slug'] =$slag;
+echo "<pre>";
+print_r($this->Priest_model->getpriest( $param));
+
 die;
     }
 

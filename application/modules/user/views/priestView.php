@@ -259,8 +259,8 @@ $('.more-priest-block').hide();
           
         $.each( priestList, function( i, priest  ) {
           rhtml  += ` <li>
-            <span><img src="http://www.kuzhithuraidiocese.com/images/diocesepriest/`+priest.priestid+`.jpg" class="img-responsive" onerror="imgError(this);" alt="Cinque Terre"></span>
-            <span>`+priest.pname+`</span>
+            <span><a href="`+base_url+`f/`+priest.slug+`"><img src="http://www.kuzhithuraidiocese.com/images/diocesepriest/`+priest.priestid+`.jpg" class="img-responsive" onerror="imgError(this);" alt="Cinque Terre"></a></span>
+            <span><a href="`+base_url+`f/`+priest.slug+`">`+priest.pname+`</a></span>
             <span>4341</span>
             <span></span>
             <span>
