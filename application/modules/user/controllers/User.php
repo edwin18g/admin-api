@@ -67,7 +67,8 @@ public function view_gallery()
     $user_id                        = $this->session->userdata ('user_details')[0]->users_id;   
     $param['limit']                 = 15 ;
     $param['offset']                = $this->input->post('enddata');
-    if(!empty($this->input->post('search')){
+    if(!empty($this->input->post('search')))
+    {
         $param['search']                = $this->input->post('search');
     }
     $param['select']                = '*' ;
