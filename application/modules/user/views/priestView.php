@@ -77,7 +77,7 @@
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 80%;
+    min-width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -114,7 +114,6 @@
 .modal-header {
     padding: 2px 16px;
     background-color: #9c27b0;
-    background-color: #;
     color: white;
 }
 
@@ -292,11 +291,35 @@ return rhtml;
 <div class="modal-content">
   <div class="modal-header">
     <span class="close">&times;</span>
-    <h2>Modal Header</h2>
+    <h2>Add priest</h2>
   </div>
   <div class="modal-body">
-    <p>Some text in the Modal Body</p>
-    <p>Some other text...</p>
+  <form class="form-horizontal" action="/action_page.php">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="pwd">Password:</label>
+    <div class="col-sm-10"> 
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+  </div>
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+</form>
   </div>
   <div class="modal-footer">
     <h3>Modal Footer</h3>
