@@ -4,7 +4,7 @@
     border: 1px solid #e1e8ed;
     border-radius: 6px;
     height: 200px;
-    max-width: 340px; // orginal twitter width: 290px;
+    width: 100%; // orginal twitter width: 290px;
 }
 .twPc-bg {
     background-image: url("https://pbs.twimg.com/profile_banners/50988711/1384539792/600x200");
@@ -12,7 +12,7 @@
     background-size: 100% auto;
     border-bottom: 1px solid #e1e8ed;
     border-radius: 4px 4px 0 0;
-    height: 95px;
+    height: 120px;
     width: 100%;
 }
 .twPc-block {
@@ -38,8 +38,8 @@
     border-radius: 7px;
     box-sizing: border-box;
     color: #fff;
-    height: 72px;
-    width: 72px;
+    height: 95px;
+    width: 95px;
 }
 .twPc-divUser {
     margin: 5px 0 0;
@@ -121,40 +121,40 @@ ul.twPc-Arrange {
 	<div>
 		<div class="twPc-button">
             <!-- Twitter Button | you can get from: https://about.twitter.com/tr/resources/buttons#follow -->
-            <a href="https://twitter.com/mertskaplan" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false" data-dnt="true">Follow @mertskaplan</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <a href="#" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false" data-dnt="true">follow</a>
+           
             <!-- Twitter Button -->   
 		</div>
 
-		<a title="Mert S. Kaplan" href="https://twitter.com/mertskaplan" class="twPc-avatarLink">
-			<img alt="Mert S. Kaplan" src="https://mertskaplan.com/wp-content/plugins/msk-twprofilecard/img/mertskaplan.jpg" class="twPc-avatarImg">
+		<a title="<?php echo $priestDetials->pname;?>" href="#" class="twPc-avatarLink">
+			<img alt="<?php echo $priestDetials->pname;?>" src="http://www.kuzhithuraidiocese.com/images/diocesepriest/<?php echo $priestDetials->priestid;?>.jpg" class="twPc-avatarImg">
 		</a>
 
 		<div class="twPc-divUser">
 			<div class="twPc-divName">
-				<a href="https://twitter.com/mertskaplan">Mert S. Kaplan</a>
+				<a href="#"><?php echo $priestDetials->pname;?></a>
 			</div>
 			<span>
-				<a href="https://twitter.com/mertskaplan">@<span>mertskaplan</span></a>
+				<a href="#">@<span><?php echo $priestDetials->pname;?></span></a>
 			</span>
 		</div>
 
 		<div class="twPc-divStats">
 			<ul class="twPc-Arrange">
 				<li class="twPc-ArrangeSizeFit">
-					<a href="https://twitter.com/mertskaplan" title="9.840 Tweet">
+					<a href="#" title="9.840 Tweet">
 						<span class="twPc-StatLabel twPc-block">Tweets</span>
 						<span class="twPc-StatValue">9.840</span>
 					</a>
 				</li>
 				<li class="twPc-ArrangeSizeFit">
-					<a href="https://twitter.com/mertskaplan/following" title="885 Following">
+					<a href="#" title="885 Following">
 						<span class="twPc-StatLabel twPc-block">Following</span>
 						<span class="twPc-StatValue">885</span>
 					</a>
 				</li>
 				<li class="twPc-ArrangeSizeFit">
-					<a href="https://twitter.com/mertskaplan/followers" title="1.810 Followers">
+					<a href="#" title="1.810 Followers">
 						<span class="twPc-StatLabel twPc-block">Followers</span>
 						<span class="twPc-StatValue">1.810</span>
 					</a>
