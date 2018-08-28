@@ -6,7 +6,7 @@ class Church extends CI_Controller {
 	    parent::__construct();
 	    //Checking user is login or not 
 	    is_login();
-	    $this->load->model("Setting_model");    
+	    //$this->load->model("Setting_model");    
   	}
 
   /**
