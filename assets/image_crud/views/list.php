@@ -169,7 +169,7 @@ window.onload = createUploader;
     		});
 		});
 	</script>
-	<ul class='photos-crud'><!-- tes6 ->
+	<ul class='photos-crud'>
 	<?php foreach($photos as $photo_num => $photo){?>
 			<li id="photos_<?php echo $photo->$primary_key; ?>">
 				<div class='photo-box'>
