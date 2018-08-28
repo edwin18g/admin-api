@@ -84,10 +84,13 @@ public function view_gallery()
     {
         $this->load->model('Priest_model');
 $param['slug'] =$slag;
-echo "<pre>";
-print_r($this->Priest_model->getpriest( $param));
-
-die;
+// echo "<pre>";
+// print_r($this->Priest_model->getpriest( $param));
+$data['te'] ='';
+$this->load->view('include/header'); 
+$this->load->view('priestSingleView', $data);
+//        $this->load->view('priests', $data);
+$this->load->view('include/footer');
     }
 
     public function priests()
