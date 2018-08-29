@@ -89,19 +89,20 @@
             <!-- /.sidebar -->
           </aside>        
           <header class="main-header">
-            <a href="<?php echo base_url(); ?>" class="logo">
-             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
-              <!-- mini logo for sidebar mini 50x50 pixels -->
-              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
-              <!-- logo for regular state and mobile devices -->
-              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
-            </a>
+            
             <!-- Header Navbar: style can be found in header.less -->
-            <nav class="navbar navbar-static-top">
+            <nav class="navbar navbar-fixed-top">
             <!-- Sidebar toggle button-->
                 <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                     <span class="sr-only">Toggle navigation</span>
                 </a>
+                <a href="<?php echo base_url(); ?>" class="logo">Kuzhithurai Diocese
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini hidden"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg hidden"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a>
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
                         <!-- Control Sidebar Toggle Button -->
