@@ -47,13 +47,13 @@
         <div class="wrapper">
 
           <header class="main-header">
-            <a href="<?php echo base_url(); ?>" class="logo">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
              <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
               <!-- mini logo for sidebar mini 50x50 pixels -->
               <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
               <!-- logo for regular state and mobile devices -->
               <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
-            </a>
+            </a> */?>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top">
             <!-- Sidebar toggle button-->
