@@ -53,7 +53,7 @@
               <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
               <!-- logo for regular state and mobile devices -->
               <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
-            </a> */?>
+            </a> */ ?>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top">
             <!-- Sidebar toggle button-->
@@ -89,6 +89,1340 @@
                 </div>
             </nav>
           </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          
           <!-- Left side column. contains the logo and sidebar -->
           <aside class="main-sidebar">
             <!-- sidebar: style can be found in sidebar.less -->
@@ -130,4 +1464,49 @@
               </ul>
             </section>
             <!-- /.sidebar -->
-          </aside>        
+          </aside>    
+
+          <header class="main-header">
+            <?php /*<a href="<?php echo base_url(); ?>" class="logo">
+             <?php $logo =  (setting_all('logo'))?setting_all('logo'):'logo.png'; ?>
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg"><img src="<?php echo base_url().'assets/images/'.$logo; ?>" id="logo"></span>
+            </a> */ ?>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <!-- <li>
+                          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li> -->
+                        <!-- User Account: style can be found in dropdown.less -->          
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <?php 
+                 $profile_pic =  'user.png';
+                 if(isset($this->session->userdata('user_details')[0]->profile_pic) && file_exists('assets/images/'.$this->session->userdata('user_details')[0]->profile_pic))
+                              {
+                                 $profile_pic = $this->session->userdata('user_details')[0]->profile_pic;
+                              }?>
+                              <img src="<?php echo base_url().'assets/images/'.$profile_pic;?>"  class="user-image" alt="User Image">
+                            <span class="hidden-xs"><?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu" style="width: 164px;">
+                              <li><a href="<?php echo base_url('user/profile');?>"><i class="fa fa-user mr10"></i>My Account</a></li>
+                              <li class="divider"></li>
+                              <li><a href="<?php echo base_url('user/logout');?>"><i class="fa fa-power-off mr10"></i> Sign Out</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+              
