@@ -24,9 +24,9 @@
 
       </div>
         <ul class="list-inline">
-    <li class="text-center dash-block">
+    <li class="text-center dash-block col-sm-3">
         <a href="<?php echo base_url('priests');?>" >
-      <div class="col-sm-3">
+      <div class="">
       <div class="media dash-media">
   <div class="media-left">
     <img src="http://4.bp.blogspot.com/-CiBrlthg3V4/TuNxJRmZ1_I/AAAAAAAAJXE/DY-Ez3RxqUE/s400/Bishop%2BPaprocki.jpg" class="media-object" style="width:60px">
@@ -38,9 +38,9 @@
 </div>
       
       </div> </a></li>
-      <li class="text-center dash-block">
+      <li class="text-center dash-block col-sm-3">
         <a href="<?php echo '#';?>" >
-      <div class="col-sm-3">
+      <div class="">
       <div class="media dash-media">
   <div class="media-left">
     <img src="http://www.majodi.org/v4/images/thumbnails/images/parish/StMaryAyerS.jpg" class="media-object" style="width:60px">
@@ -52,9 +52,9 @@
 </div>
       
       </div> </a></li>
-      <li class="text-center dash-block">
+      <li class="text-center dash-block col-sm-3">
         <a href="<?php echo base_url('user/gallery');;?>" >
-      <div class="col-sm-3">
+      <div class="">
       <div class="media dash-media">
   <div class="media-left">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxM8jmirZGc4woptPdJUmsYCNynrvMdWw2g1WoELebsP0KRXwI" class="media-object" style="width:60px">
