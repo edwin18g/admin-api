@@ -11,7 +11,7 @@
 <style>
 /* Style The Dropdown Button */
 .dropbtn {
-    background-color: #9c27b0;
+    background-color: #042688;
     color: white;
     padding: 5px;
     font-size: 16px;
@@ -113,7 +113,7 @@
 
 .modal-header {
     padding: 2px 16px;
-    background-color: #9c27b0;
+    background-color: #042688;
     color: white;
 }
 
@@ -121,7 +121,7 @@
 
 .modal-footer {
     padding: 2px 5px;
-    background-color: #9c27b0;
+    background-color: #042688;
     color: white;
 }
 </style>
