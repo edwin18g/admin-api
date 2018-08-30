@@ -13,11 +13,12 @@
     </div>
   <?php } ?>
     <!-- Profile Image -->
+    <h2 class="hidden-xs">Hi!  Welcome .... <?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></h2>
   <div class="clearfix"></div>
     <div class="box box-success pad-profile with-border">
     <div class="clearfix"></div>
         
-              <h2 class="hidden-xs">Hi!  Welcome .... <?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></h2>
+              
 
   
 
