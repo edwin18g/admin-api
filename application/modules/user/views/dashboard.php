@@ -15,7 +15,8 @@
     <!-- Profile Image -->
     <h2 class="hidden-xs">Hi!  Welcome .... <?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></h2>
   <div class="clearfix"></div>
-    <div class="box box-success pad-profile with-border">
+    <div class="pad-profile with-border">
+    <br><br><br><br><br>
     <div class="clearfix"></div>
         
               
@@ -25,7 +26,7 @@
 
       
         <ul class="list-inline">
-    <li class="text-center dash-block col-sm-3">
+    <li class="text-center dash-block col-sm-2">
         <a href="<?php echo base_url('priests');?>" >
       <div class="">
       <div class="media dash-media">
@@ -39,7 +40,7 @@
 </div>
       
       </div> </a></li>
-      <li class="text-center dash-block col-sm-3">
+      <li class="text-center dash-block col-sm-2">
         <a href="<?php echo '#';?>" >
       <div class="">
       <div class="media dash-media">
@@ -53,7 +54,7 @@
 </div>
       
       </div> </a></li>
-      <li class="text-center dash-block col-sm-3">
+      <li class="text-center dash-block col-sm-2">
         <a href="<?php echo base_url('user/gallery');;?>" >
       <div class="">
       <div class="media dash-media">
