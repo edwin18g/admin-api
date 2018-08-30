@@ -14,15 +14,15 @@
   <?php } ?>
     <!-- Profile Image -->
   
-    <div class="box box-success pad-profile">
-     	<div class="box-header with-border">
+    <div class="box box-success pad-profile with-border">
+     	
         
               <h2 class="hidden-xs">Hi!  Welcome .... <?php echo isset($this->session->userdata('user_details')[0]->name)?$this->session->userdata('user_details')[0]->name:'';?></h2>
 
   
 
 
-      </div>
+      
         <ul class="list-inline">
     <li class="text-center dash-block col-sm-3">
         <a href="<?php echo base_url('priests');?>" >
