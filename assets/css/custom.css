@@ -698,3 +698,9 @@ th.showRolesPermission {
 }
 
 /* li pagination table end */
+
+.filter-block
+{
+    background: #ffff;
+    padding: 6px;
+}

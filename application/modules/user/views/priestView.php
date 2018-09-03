@@ -67,7 +67,7 @@
     <li><a href="#">Pictures</a></li>
     <li class="active">Vacation</li>        
   </ol>
-  <div class="col-md-12"> 
+  <div class="col-md-12 filter-block"> 
     <span class="col-md-4"> 
         <input class="form-control" id="searchkeyPirest" type="text" placeholder="Search..">
     </span>
