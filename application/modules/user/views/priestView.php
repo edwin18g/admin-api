@@ -84,7 +84,7 @@
 
    </span><span><button class="dropbtn" data-toggle="modal" data-target="#addPriest" >Add Priest</button></span><span id="priestCount">   </span> </div>
 <!-- Main content -->
-  <div class="col-md-12 form f-label">
+  <div class="col-md-12 form f-label blockStrat">
   <?php if($this->session->flashdata("messagePr")){?>
     <div class="alert alert-info">      
       <?php echo $this->session->flashdata("messagePr")?>
