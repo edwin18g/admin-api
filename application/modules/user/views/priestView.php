@@ -73,7 +73,7 @@
     </span>
     <span>
     <div class="dropdown">
-  <button class="dropbtn">All priest</button>
+  <button class="btn btn-sm btn-link">All priest  <span class="glyphicon glyphicon-collapse-down"></span></button>
   <div class="dropdown-content">
   <a href="#">
     All Priest</a>
