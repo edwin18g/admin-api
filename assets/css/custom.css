@@ -732,3 +732,14 @@ th.showRolesPermission {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+
+}
+
+
+  /*list-priest */
+  .list-priest a, .list-priest a:hover{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
