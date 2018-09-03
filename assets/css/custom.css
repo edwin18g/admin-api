@@ -702,5 +702,10 @@ th.showRolesPermission {
 .filter-block
 {
     background: #ffff;
-    padding: 6px;
+    padding: 9px;
+    position: fixed;
+    z-index: 1000;
+}
+.breadcrumb{
+    margin-bottom: 0px !important;
 }
