@@ -3,7 +3,7 @@
     background: #fff none repeat scroll 0 0;
     border: 1px solid #e1e8ed;
     border-radius: 6px;
-    height: 200px;
+    
     width: 100%; // orginal twitter width: 290px;
 }
 .twPc-bg {
@@ -42,7 +42,7 @@
     width: 95px;
 }
 .twPc-divUser {
-    margin: 5px 0 0;
+    margin: 63px 0 0;
 }
 .twPc-divName {
     font-size: 18px;
